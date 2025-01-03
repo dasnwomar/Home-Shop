@@ -37,8 +37,8 @@ const products = document.querySelectorAll('.product');
 searchBox.addEventListener('input', function() {
     const query = this.value.toLowerCase();
     products.forEach(product => {
-        const productName = product.querySelector('.p-dtail h3').textContent.toLowerCase();
-        const productPrice = product.querySelector('.p-dtail h2').textContent.toLowerCase();
+        const productName = product.querySelector('.p-dtail h4').textContent.toLowerCase();
+        const productPrice = product.querySelector('.p-dtail h3').textContent.toLowerCase();
 
         // Check direct match
         let isMatch = productName.includes(query) || productPrice.includes(query);
